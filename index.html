@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive AI Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">My Website</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Welcome to My Website</h1>
+            <p>This is the home section.</p>
+        </section>
+
+        <section id="learning">
+            <h2>Interactive JavaScript Fun!</h2>
+            <p>Enter your name and age, and let's have some fun with JavaScript!</p>
+            <input type="text" id="nameInput" placeholder="Enter your name">
+            <input type="number" id="ageInput" placeholder="Enter your age">
+            <button id="submitBtn">Submit</button>
+
+            <div id="output"></div>
+            <h3>🎉 Countdown to Your Next Birthday!</h3>
+            <div id="countdown"></div>
+
+            <h3>🔮 Age Prediction Game!</h3>
+            <button id="ageGameBtn">Guess Your Age in 5 Years</button>
+            <p id="ageGameOutput"></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
