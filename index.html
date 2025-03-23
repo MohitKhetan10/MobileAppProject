@@ -1,52 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive AI Website</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Mobile Site</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">My Website</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </header>
 
-    <main>
-        <section id="home">
-            <h1>Welcome to My Website</h1>
-            <p>This is the home section.</p>
-        </section>
+  <header>
+    <div class="logo">My Mobile Site</div>
+    <ul class="nav-links">
+      <li><a href="#click">Click</a></li>
+      <li><a href="#toggle">Toggle</a></li>
+      <li><a href="#form">Form</a></li>
+    </ul>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
 
-        <section id="learning">
-            <h2>Interactive JavaScript Fun!</h2>
-            <p>Enter your name and age, and let's have some fun with JavaScript!</p>
-            <input type="text" id="nameInput" placeholder="Enter your name">
-            <input type="number" id="ageInput" placeholder="Enter your age">
-            <button id="submitBtn">Submit</button>
+  <main>
 
-            <div id="output"></div>
-            <h3>🎉 Countdown to Your Next Birthday!</h3>
-            <div id="countdown"></div>
+    <!-- Click Section -->
+    <section id="click">
+      <h2>1️⃣ Button Click (jQuery)</h2>
+      <button id="clickBtn">Click Me</button>
+      <div id="messageBox"></div>
+    </section>
 
-            <h3>🔮 Age Prediction Game!</h3>
-            <button id="ageGameBtn">Guess Your Age in 5 Years</button>
-            <p id="ageGameOutput"></p>
-        </section>
-    </main>
+    <!-- Toggle Section -->
+    <section id="toggle">
+      <h2>2️⃣ Toggle Info Section</h2>
+      <button id="toggleBtn">Show/Hide Info</button>
+      <div id="infoBox">📘 This is a toggleable message using jQuery!</div>
+    </section>
 
-    <script src="script.js"></script>
+    <!-- Form Section -->
+    <section id="form">
+      <h2>3️⃣ Form Validation</h2>
+      <input type="text" id="nameInput" placeholder="Enter your name" />
+      <button id="submitBtn">Submit</button>
+      <div id="formResult"></div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>

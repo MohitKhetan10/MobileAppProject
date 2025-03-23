@@ -40,7 +40,7 @@ nav {
     font-size: 18px;
 }
 
-/* Hamburger Menu */
+/* Hamburger Menu (Hidden by Default) */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -55,22 +55,22 @@ nav {
     transition: all 0.3s ease;
 }
 
-/* Responsive Design */
+/* Responsive Design: Mobile View */
 @media (max-width: 768px) {
     .nav-links {
-        display: none;
+        display: none; /* Hide menu by default */
         flex-direction: column;
         position: absolute;
         top: 60px;
         left: 0;
         width: 100%;
         background-color: #333;
-        text-align: center;
         padding: 10px 0;
+        text-align: center;
     }
 
     .nav-links.open {
-        display: flex;
+        display: flex; /* Show menu when toggled */
     }
 
     .nav-links li {
@@ -80,39 +80,17 @@ nav {
     .hamburger {
         display: flex;
     }
-}
 
-/* JavaScript Output Section */
-#learning {
-    margin: 20px;
-    padding: 20px;
-    background: #f4f4f4;
-    border-radius: 8px;
-    text-align: center;
-}
+    /* Animated Hamburger Menu */
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
 
-#output, #countdown, #ageGameOutput {
-    background: white;
-    padding: 10px;
-    border: 1px solid #ccc;
-    margin-top: 10px;
-    font-family: monospace;
-}
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
 
-input, button {
-    padding: 10px;
-    margin: 5px;
-    font-size: 16px;
-}
-
-button {
-    cursor: pointer;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #218838;
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
 }
