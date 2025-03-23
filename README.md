@@ -28,10 +28,3 @@ It showcases:
 ✅ Form Validation with User Feedback  
 
 ---
-
-## 🔗 Live Demo (Optional)
-Enable **GitHub Pages** in the repo's **Settings** to make it live:
-
-1. Go to **Settings → Pages**
-2. Under **Source**, select `main` branch → click **Save**
-3. You’ll get a link like:  
